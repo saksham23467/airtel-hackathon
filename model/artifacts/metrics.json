@@ -1,0 +1,480 @@
+{
+  "protocol": "5-fold lead-level CV, shuffle seed 7, on 368 activated leads. Every method uses the same eligibility filter (profile plus active mock GSTIN, and at least one eligible base) and the same dependency-complete assembler. Precision uses the original purchase labels, including purchases that were ineligible. Top-3 and top-5 bundles are assembled separately.",
+  "n_activated": 368,
+  "historical_purchase_audit": {
+    "lines": 1651,
+    "profile": 40,
+    "dependency_only": 9,
+    "union_profile_or_dependency": 49,
+    "additional_inactive_registry": 9
+  },
+  "assembled": {
+    "gbm": {
+      "3": {
+        "precision": 0.707427536231884,
+        "recall": 0.517870082815735,
+        "hit_rate": 1.0,
+        "violations": 0,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.5646739130434782,
+        "recall": 0.6656573498964803,
+        "hit_rate": 1.0,
+        "violations": 0,
+        "mean_products": 5.0
+      }
+    },
+    "pop_segment": {
+      "3": {
+        "precision": 0.683876811594203,
+        "recall": 0.5007817891649413,
+        "hit_rate": 1.0,
+        "violations": 0,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.5782608695652174,
+        "recall": 0.6824598861283644,
+        "hit_rate": 1.0,
+        "violations": 0,
+        "mean_products": 5.0
+      }
+    },
+    "pop_global": {
+      "3": {
+        "precision": 0.48188405797101447,
+        "recall": 0.3620611197377502,
+        "hit_rate": 0.9945652173913043,
+        "violations": 0,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.44782608695652176,
+        "recall": 0.5473591701173223,
+        "hit_rate": 1.0,
+        "violations": 0,
+        "mean_products": 5.0
+      }
+    },
+    "stated_interest": {
+      "3": {
+        "precision": 0.37228260869565216,
+        "recall": 0.2657069530710835,
+        "hit_rate": 0.8260869565217391,
+        "violations": 0,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.4108695652173914,
+        "recall": 0.4954807194616977,
+        "hit_rate": 0.9918478260869565,
+        "violations": 0,
+        "mean_products": 5.0
+      }
+    }
+  },
+  "raw_topk_before_dependency_assembly": {
+    "gbm": {
+      "3": {
+        "precision": 0.707427536231884,
+        "recall": 0.5153856107660455,
+        "hit_rate": 1.0,
+        "violations": 42,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.567391304347826,
+        "recall": 0.6690055641821947,
+        "hit_rate": 1.0,
+        "violations": 35,
+        "mean_products": 5.0
+      }
+    },
+    "pop_segment": {
+      "3": {
+        "precision": 0.6856884057971014,
+        "recall": 0.5014611369910283,
+        "hit_rate": 1.0,
+        "violations": 14,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.5788043478260869,
+        "recall": 0.6830033643892339,
+        "hit_rate": 1.0,
+        "violations": 1,
+        "mean_products": 5.0
+      }
+    },
+    "pop_global": {
+      "3": {
+        "precision": 0.48188405797101447,
+        "recall": 0.3620611197377502,
+        "hit_rate": 0.9945652173913043,
+        "violations": 0,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.44782608695652176,
+        "recall": 0.5473591701173223,
+        "hit_rate": 1.0,
+        "violations": 0,
+        "mean_products": 5.0
+      }
+    },
+    "stated_interest": {
+      "3": {
+        "precision": 0.37228260869565216,
+        "recall": 0.2607250690131125,
+        "hit_rate": 0.8179347826086957,
+        "violations": 84,
+        "mean_products": 3.0
+      },
+      "5": {
+        "precision": 0.4097826086956522,
+        "recall": 0.4947690217391304,
+        "hit_rate": 0.9918478260869565,
+        "violations": 17,
+        "mean_products": 5.0
+      }
+    }
+  },
+  "paired_bootstrap_assembled_p3": {
+    "pop_segment": {
+      "delta_p3": 0.023550724637681163,
+      "ci95": [
+        0.002717391304347827,
+        0.043478260869565216
+      ],
+      "resamples": 2000
+    },
+    "pop_global": {
+      "delta_p3": 0.22554347826086957,
+      "ci95": [
+        0.1992753623188406,
+        0.25
+      ],
+      "resamples": 2000
+    }
+  },
+  "per_segment_assembled_p3": {
+    "micro": {
+      "gbm": 0.7333333333333334,
+      "pop_segment": 0.7181818181818185,
+      "pop_global": 0.5030303030303029,
+      "stated_interest": 0.3636363636363637
+    },
+    "prof": {
+      "gbm": 0.6932367149758454,
+      "pop_segment": 0.644927536231884,
+      "pop_global": 0.4927536231884058,
+      "stated_interest": 0.34541062801932365
+    },
+    "multi": {
+      "gbm": 0.6626506024096386,
+      "pop_segment": 0.6506024096385542,
+      "pop_global": 0.46184738955823296,
+      "stated_interest": 0.41767068273092367
+    },
+    "mfg": {
+      "gbm": 0.7837837837837838,
+      "pop_segment": 0.8018018018018019,
+      "pop_global": 0.42342342342342343,
+      "stated_interest": 0.3963963963963964
+    }
+  },
+  "oof_examples": [
+    {
+      "lead_id": "L00002",
+      "segment": "Micro retail & services",
+      "actual": [
+        "P01",
+        "P07",
+        "P19"
+      ],
+      "gbm_assembled_3": [
+        "P07",
+        "P01",
+        "P23"
+      ],
+      "pop_segment_assembled_3": [
+        "P07",
+        "P01",
+        "P22"
+      ],
+      "gbm_assembled_5": [
+        "P07",
+        "P01",
+        "P23",
+        "P19",
+        "P22"
+      ]
+    },
+    {
+      "lead_id": "L00907",
+      "segment": "Micro retail & services",
+      "actual": [
+        "P01",
+        "P07",
+        "P18"
+      ],
+      "gbm_assembled_3": [
+        "P07",
+        "P01",
+        "P19"
+      ],
+      "pop_segment_assembled_3": [
+        "P07",
+        "P01",
+        "P19"
+      ],
+      "gbm_assembled_5": [
+        "P07",
+        "P01",
+        "P19",
+        "P23",
+        "P22"
+      ]
+    },
+    {
+      "lead_id": "L01716",
+      "segment": "Small multi-site businesses",
+      "actual": [
+        "P01",
+        "P08",
+        "P09",
+        "P19",
+        "P22",
+        "P23"
+      ],
+      "gbm_assembled_3": [
+        "P08",
+        "P02",
+        "P09"
+      ],
+      "pop_segment_assembled_3": [
+        "P08",
+        "P01",
+        "P09"
+      ],
+      "gbm_assembled_5": [
+        "P08",
+        "P02",
+        "P09",
+        "P13",
+        "P10"
+      ]
+    },
+    {
+      "lead_id": "L02412",
+      "segment": "Professional offices",
+      "actual": [
+        "P02",
+        "P07",
+        "P09",
+        "P16"
+      ],
+      "gbm_assembled_3": [
+        "P16",
+        "P08",
+        "P20"
+      ],
+      "pop_segment_assembled_3": [
+        "P16",
+        "P08",
+        "P20"
+      ],
+      "gbm_assembled_5": [
+        "P16",
+        "P08",
+        "P20",
+        "P07",
+        "P03"
+      ]
+    },
+    {
+      "lead_id": "L03292",
+      "segment": "Professional offices",
+      "actual": [
+        "P01",
+        "P07",
+        "P14",
+        "P16",
+        "P20"
+      ],
+      "gbm_assembled_3": [
+        "P16",
+        "P08",
+        "P20"
+      ],
+      "pop_segment_assembled_3": [
+        "P16",
+        "P08",
+        "P07"
+      ],
+      "gbm_assembled_5": [
+        "P16",
+        "P08",
+        "P20",
+        "P07",
+        "P02"
+      ]
+    },
+    {
+      "lead_id": "L04266",
+      "segment": "Professional offices",
+      "actual": [
+        "P02",
+        "P07",
+        "P11",
+        "P16",
+        "P17",
+        "P20"
+      ],
+      "gbm_assembled_3": [
+        "P16",
+        "P20",
+        "P07"
+      ],
+      "pop_segment_assembled_3": [
+        "P16",
+        "P07",
+        "P08"
+      ],
+      "gbm_assembled_5": [
+        "P16",
+        "P20",
+        "P07",
+        "P17",
+        "P02"
+      ]
+    },
+    {
+      "lead_id": "L04991",
+      "segment": "Small manufacturers",
+      "actual": [
+        "P05",
+        "P08",
+        "P11",
+        "P16"
+      ],
+      "gbm_assembled_3": [
+        "P08",
+        "P16",
+        "P05"
+      ],
+      "pop_segment_assembled_3": [
+        "P08",
+        "P16",
+        "P05"
+      ],
+      "gbm_assembled_5": [
+        "P08",
+        "P16",
+        "P05",
+        "P21",
+        "P20"
+      ]
+    }
+  ],
+  "feature_importance_in_sample": [
+    {
+      "feature": "seg_target_match",
+      "permutation_roc_auc_mean": 0.2568806030110067,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "install_days",
+      "permutation_roc_auc_mean": 0.0837091002281772,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "log_price",
+      "permutation_roc_auc_mean": 0.04708508771839537,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "sites",
+      "permutation_roc_auc_mean": 0.04362527398597312,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "product_idx",
+      "permutation_roc_auc_mean": 0.039207311278598854,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "price_vs_spend",
+      "permutation_roc_auc_mean": 0.03666108145252608,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "log_spend",
+      "permutation_roc_auc_mean": 0.01907794907368802,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "seg_prof",
+      "permutation_roc_auc_mean": 0.018433779704470726,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "seg_micro",
+      "permutation_roc_auc_mean": 0.018427690174311413,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "log_emp",
+      "permutation_roc_auc_mean": 0.01697419651651418,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "cat_Security",
+      "permutation_roc_auc_mean": 0.0075599201190870895,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    },
+    {
+      "feature": "setup_k",
+      "permutation_roc_auc_mean": 0.0059127450950120135,
+      "note": "in-sample permutation on the training rows; not an out-of-fold test score"
+    }
+  ],
+  "model_config": {
+    "max_iter": 300,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "random_state": 0
+  },
+  "versions": {
+    "python": "3.12.3",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4"
+  },
+  "hashes": {
+    "smb_leads.csv": "b2521e8cedcf3b5775a087d40d07f548afbe3e7094a9fbad3a3908ffb01120ea",
+    "product_catalogue.csv": "5110529705bda36f668cfc92e7de943a4d3c6d5b7f78ae35c4d7b0484a136e0c",
+    "mock_gstin_registry.csv": "53f18df9ef8298dfc02640aedca6329805167d4b414499b763b493f48095f33a"
+  },
+  "quoted_price_rule": "The quote uses catalogue price_min as the unit rate and one_time_setup_inr per quantity. price_max is displayed and is not charged.",
+  "historical_log_reference_not_this_run": {
+    "source": "recommender_run_v3.log supplied with the prototype inputs",
+    "warning": "Not a result of this script. Shown only so a later comparison can be honest.",
+    "gbm_precision_at_3": 0.707427536231884,
+    "gbm_precision_at_5": 0.5646739130434782,
+    "pop_segment_precision_at_3": 0.683876811594203,
+    "pop_segment_precision_at_5": 0.5782608695652174
+  },
+  "limitations": [
+    "Trained only on synthetic activated leads, so it learns what converted customers bought, not what would have converted a dropped lead.",
+    "Out-of-fold metrics are the evaluation. Scores for those same activated leads from the saved full-data model are in-sample.",
+    "Quantities are not predicted. The model ranks product ids.",
+    "Dependency closure can change the set relative to raw top-k. Read both tables.",
+    "Top-3 and top-5 are separate bundles, not a nested prefix.",
+    "Mock GSTIN status is a local file, not a government API.",
+    "No calibration curve and no prospective holdout beyond this quarter.",
+    "Python and scikit-learn versions are whatever this machine installed. A match to an older log is not assumed."
+  ]
+}

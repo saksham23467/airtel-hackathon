@@ -1,0 +1,228 @@
+{
+  "leads": 5000,
+  "activated": 368,
+  "stages": [
+    {
+      "stage": "Lead",
+      "leads": 5000,
+      "share_of_previous": null
+    },
+    {
+      "stage": "Contacted",
+      "leads": 3406,
+      "share_of_previous": 0.6812
+    },
+    {
+      "stage": "Needs assessed",
+      "leads": 1974,
+      "share_of_previous": 0.5795654726952437
+    },
+    {
+      "stage": "Quote accepted",
+      "leads": 861,
+      "share_of_previous": 0.43617021276595747
+    },
+    {
+      "stage": "KYC complete",
+      "leads": 588,
+      "share_of_previous": 0.6829268292682927
+    },
+    {
+      "stage": "Activated",
+      "leads": 368,
+      "share_of_previous": 0.6258503401360545
+    }
+  ],
+  "mean_days_lead_to_activation": 17.616847826086957,
+  "mean_follow_up_calls": 3.010869565217391,
+  "median_monthly_bundle_inr": 6900.0,
+  "mean_monthly_bundle_inr": 12350.516304347826,
+  "total_acquisition_cost_inr": 5539640.0,
+  "blended_acquisition_cost_per_activation_inr": 15053.369565217392,
+  "mean_recorded_cost_on_activated_inr": 5385.190217391304,
+  "churned_within_6_months": 56,
+  "churn_rate": 0.15217391304347827,
+  "activation_with_gstin_flag": {
+    "activated": 338,
+    "leads": 3534,
+    "rate": 0.09564233163554046
+  },
+  "activation_without_gstin_flag": {
+    "activated": 30,
+    "leads": 1466,
+    "rate": 0.020463847203274217
+  },
+  "segments": [
+    {
+      "segment": "Micro retail & services",
+      "key": "micro",
+      "leads": 2709,
+      "activated": 110,
+      "activation_rate": 0.04060538944259875,
+      "mean_monthly_bundle_inr": 2504.818181818182,
+      "mean_acquisition_cost_inr": 2688.4545454545455,
+      "revenue_months_to_cover_cac": 1.0733132508256813,
+      "note": "revenue months are acquisition cost divided by mean monthly bundle, not profit payback"
+    },
+    {
+      "segment": "Professional offices",
+      "key": "prof",
+      "leads": 1247,
+      "activated": 138,
+      "activation_rate": 0.11066559743384122,
+      "mean_monthly_bundle_inr": 6795.869565217391,
+      "mean_acquisition_cost_inr": 4169.347826086957,
+      "revenue_months_to_cover_cac": 0.6135120437605963,
+      "note": "revenue months are acquisition cost divided by mean monthly bundle, not profit payback"
+    },
+    {
+      "segment": "Small multi-site businesses",
+      "key": "multi",
+      "leads": 755,
+      "activated": 83,
+      "activation_rate": 0.10993377483443709,
+      "mean_monthly_bundle_inr": 31233.493975903613,
+      "mean_acquisition_cost_inr": 9099.036144578313,
+      "revenue_months_to_cover_cac": 0.2913230313457132,
+      "note": "revenue months are acquisition cost divided by mean monthly bundle, not profit payback"
+    },
+    {
+      "segment": "Small manufacturers",
+      "key": "mfg",
+      "leads": 289,
+      "activated": 37,
+      "activation_rate": 0.12802768166089964,
+      "mean_monthly_bundle_inr": 19979.72972972973,
+      "mean_acquisition_cost_inr": 9606.216216216217,
+      "revenue_months_to_cover_cac": 0.4807981061887048,
+      "note": "revenue months are acquisition cost divided by mean monthly bundle, not profit payback"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Channel partner",
+      "leads": 1010,
+      "activated": 81,
+      "activation_rate": 0.0801980198019802,
+      "acquisition_cost_inr": 1688930.0
+    },
+    {
+      "source": "Field sales",
+      "leads": 1720,
+      "activated": 125,
+      "activation_rate": 0.07267441860465117,
+      "acquisition_cost_inr": 3041870.0
+    },
+    {
+      "source": "Inbound call",
+      "leads": 504,
+      "activated": 48,
+      "activation_rate": 0.09523809523809523,
+      "acquisition_cost_inr": 245440.0
+    },
+    {
+      "source": "Referral",
+      "leads": 413,
+      "activated": 61,
+      "activation_rate": 0.14769975786924938,
+      "acquisition_cost_inr": 250020.0
+    },
+    {
+      "source": "Website form",
+      "leads": 995,
+      "activated": 43,
+      "activation_rate": 0.04321608040201005,
+      "acquisition_cost_inr": 273120.0
+    },
+    {
+      "source": "WhatsApp campaign",
+      "leads": 358,
+      "activated": 10,
+      "activation_rate": 0.027932960893854747,
+      "acquisition_cost_inr": 40260.0
+    }
+  ],
+  "drop_reasons": [
+    {
+      "reason": "Unreachable after 3 attempts",
+      "leads": 805
+    },
+    {
+      "reason": "Owner had no time for a visit",
+      "leads": 531
+    },
+    {
+      "reason": "Not interested on first call",
+      "leads": 470
+    },
+    {
+      "reason": "Price too high",
+      "leads": 414
+    },
+    {
+      "reason": "Locked in with current provider",
+      "leads": 325
+    },
+    {
+      "reason": "Wrong or invalid number",
+      "leads": 319
+    },
+    {
+      "reason": "Visit not scheduled by sales",
+      "leads": 296
+    },
+    {
+      "reason": "Only wanted a mobile plan",
+      "leads": 280
+    },
+    {
+      "reason": "Competitor offered cheaper plan",
+      "leads": 207
+    },
+    {
+      "reason": "Quote too complex to understand",
+      "leads": 206
+    },
+    {
+      "reason": "Quote took too long to arrive",
+      "leads": 179
+    },
+    {
+      "reason": "Decided to wait",
+      "leads": 107
+    },
+    {
+      "reason": "Installation delayed beyond 21 days",
+      "leads": 98
+    },
+    {
+      "reason": "Missing GST or Udyam document",
+      "leads": 94
+    },
+    {
+      "reason": "Found paperwork too long",
+      "leads": 79
+    },
+    {
+      "reason": "Authorised signatory not available",
+      "leads": 53
+    },
+    {
+      "reason": "Customer cancelled before install",
+      "leads": 53
+    },
+    {
+      "reason": "Document details did not match",
+      "leads": 47
+    },
+    {
+      "reason": "Site not feasible for fibre",
+      "leads": 41
+    },
+    {
+      "reason": "First payment failed",
+      "leads": 28
+    }
+  ],
+  "case_clock": "2026-07-15"
+}
